@@ -30,7 +30,7 @@ def valid_phone_number?(phone)
   y = phone.match(/\d\d\d\d\d\d\d\d\d\d/) 
   z = phone.match(/\W\d\d\d\W\d\d\d\d\d\d\d/) 
   
-  if x || y || z
+  if w || x || y || z
     return true 
   else
     return false 
