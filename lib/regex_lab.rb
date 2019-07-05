@@ -1,4 +1,4 @@
-require "pry"
+
 def starts_with_a_vowel?(word)
   if word.match(/^[aeiouAEIOU]\w+/) == nil
     return false
@@ -29,7 +29,7 @@ def valid_phone_number?(phone)
   x = phone.match(/\W\d\d\d\W\d\d\d\W\d\d\d\d\b/)
   y = phone.match(/\d\d\d\d\d\d\d\d\d\d/) 
   z = phone.match(/\W\d\d\d\W\d\d\d\d\d\d\d/) 
-  binding.pry
+  
   if x || y || z
     return true 
   else
